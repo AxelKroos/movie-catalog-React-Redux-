@@ -1,0 +1,2 @@
+export const GETTING_DATA = 'GETTING_DATA'
+export const CHANGE_PAGE = 'CHANGE_PAGE'

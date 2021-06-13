@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import TableFilms from "./components/tableFilms/tableFilms";
+import React from "react";
+import MoviePage from "./components/tableFilms/moviePage/moviePage";
+import {Route, Switch} from "react-router";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+    const NoMatchPage = () => {
+        return <h3 style={{color: 'red'}}>404 - Not found</h3>
+    }
+    return <div className="App">
+        <Switch>
+            <Route exact path='/' component={TableFilms}/>
+            <Route path={`/movie/`} component={MoviePage}/>
+            <Route component={NoMatchPage}/>
+        </Switch>
     </div>
-  );
 }
 
 export default App;
