@@ -1,3 +1,14 @@
+# Каталог фильмов :movie_camera: :pizza: 
+## Стек: React + Redux
+![ZJEdnc6J](https://user-images.githubusercontent.com/79835478/121802006-f5485c00-cc42-11eb-95bb-9bd9e91af52c.jpg)
+![t96xqKaM](https://user-images.githubusercontent.com/79835478/121802007-f6798900-cc42-11eb-891e-a04a43c1ffde.jpg)
+
+### Возможности:
+- :white_check_mark: Данные берутся с https://yts.mx/api#list_movies
+- :white_check_mark: Пагинация страниц
+- :white_check_mark: Переход по клику на страничку фильма
+- :white_check_mark: Скачивание фильма
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
